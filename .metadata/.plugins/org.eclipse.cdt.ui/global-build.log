@@ -1,0 +1,20 @@
+08:40:24 **** Build of configuration Debug for project on-board ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32h723zgtx.d" -MT"Startup/startup_stm32h723zgtx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32h723zgtx.o" "../Startup/startup_stm32h723zgtx.s"
+arm-none-eabi-g++ "../Src/main.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DDEBUG -DSTM32 -DSTM32H7SINGLE -DSTM32H723ZGTx -DSTM32H7 -c -I../Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32H7SINGLE -DSTM32H723ZGTx -DSTM32H7 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32H7SINGLE -DSTM32H723ZGTx -DSTM32H7 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.cpp:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-g++ -o "on-board.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\fanpr\Desktop\Projects\Active\ARVOS\on-board\STM32H723ZGTX_FLASH.ld" -Wl,-Map="on-board.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: on-board.elf
+ 
+arm-none-eabi-size  on-board.elf 
+arm-none-eabi-objdump -h -S on-board.elf  > "on-board.list"
+   text	   data	    bss	    dec	    hex	filename
+    976	      0	   1568	   2544	    9f0	on-board.elf
+Finished building: default.size.stdout
+ 
+Finished building: on-board.list
+ 
