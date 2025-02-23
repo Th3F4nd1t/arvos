@@ -1,69 +1,24 @@
-!SESSION 2025-02-19 20:41:43.041 -----------------------------------------------
+!SESSION 2025-02-22 21:28:11.384 -----------------------------------------------
 eclipse.buildId=Version 1.17.0
 java.version=21.0.3
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-19 20:41:49.004
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-22 21:28:19.139
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-19 20:41:49.006
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-22 21:28:19.141
 !MESSAGE Log4j2 initialized with config file C:\Users\fanpr\Desktop\Projects\Active\ARVOS\.metadata\.log4j2.xml
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-19 20:42:12.085
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-22 21:28:23.009
 !MESSAGE Started RMI Server, listening on port 41337
 
-!ENTRY org.eclipse.cdt.core 1 0 2025-02-19 20:42:46.299
-!MESSAGE Indexed 'on-board' (3 sources, 53 headers) in 1.74 sec: 1,950 declarations; 2,836 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
-!SESSION 2025-02-21 08:11:20.862 -----------------------------------------------
-eclipse.buildId=Version 1.17.0
-java.version=21.0.3
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
+!ENTRY org.eclipse.cdt.core 1 0 2025-02-22 21:29:08.325
+!MESSAGE Indexed 'on-board' (4 sources, 20 headers) in 1.05 sec: 375 declarations; 947 references; 8 unresolved inclusions; 2 syntax errors; 16 unresolved names (1.2%)
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-21 08:11:25.131
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+!ENTRY com.st.stm32cube.ide.mcu.build 1 1 2025-02-22 21:39:33.207
+!MESSAGE Converted project on-board to C++ in 159 (ms)
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-21 08:11:25.133
-!MESSAGE Log4j2 initialized with config file C:\Users\fanpr\Desktop\Projects\Active\ARVOS\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-21 08:11:43.847
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.cdt.core 1 0 2025-02-21 08:37:18.855
-!MESSAGE Indexed 'on-board' (3 sources, 53 headers) in 0.74 sec: 1,950 declarations; 2,836 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
-
-!ENTRY com.st.stm32cube.ide.mcu.build 1 1 2025-02-21 08:37:40.502
-!MESSAGE Converted project on-board to C++ in 125 (ms)
-!SESSION 2025-02-21 11:20:14.538 -----------------------------------------------
-eclipse.buildId=Version 1.17.0
-java.version=21.0.3
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-21 11:20:19.779
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-21 11:20:19.779
-!MESSAGE Log4j2 initialized with config file C:\Users\fanpr\Desktop\Projects\Active\ARVOS\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-21 11:20:52.767
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2025-02-21 22:39:26.804 -----------------------------------------------
-eclipse.buildId=Version 1.17.0
-java.version=21.0.3
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-21 22:39:31.616
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-21 22:39:31.616
-!MESSAGE Log4j2 initialized with config file C:\Users\fanpr\Desktop\Projects\Active\ARVOS\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-21 22:39:51.610
-!MESSAGE Started RMI Server, listening on port 41337
+!ENTRY com.st.stm32cube.ide.mcu.build 1 1 2025-02-22 21:43:51.674
+!MESSAGE Converted project on-board to C in 131 (ms)
