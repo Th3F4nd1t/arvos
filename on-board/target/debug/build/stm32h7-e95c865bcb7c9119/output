@@ -1,0 +1,3 @@
+cargo:rustc-link-search=C:\Users\fanpr\Desktop\Projects\Active\ARVOS\on-board\target\debug\build\stm32h7-e95c865bcb7c9119\out
+cargo:rerun-if-changed=src/stm32h743v/device.x
+cargo:rerun-if-changed=build.rs

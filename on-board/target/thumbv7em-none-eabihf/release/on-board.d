@@ -1,0 +1,1 @@
+C:\Users\fanpr\Desktop\Projects\Active\ARVOS\on-board\target\thumbv7em-none-eabihf\release\on-board: C:\Users\fanpr\Desktop\Projects\Active\ARVOS\on-board\build.rs C:\Users\fanpr\Desktop\Projects\Active\ARVOS\on-board\memory.x C:\Users\fanpr\Desktop\Projects\Active\ARVOS\on-board\src\main.rs
