@@ -1,0 +1,40 @@
+## Todo
+- on-board
+    - Events
+        - Hardware access
+        - Event manager
+        - Event template
+    - Subsystems
+        - Template
+    - Main loop
+    - Designing events
+    - Designing subsystems
+    - Actually implementing subsystems
+    - Actually implementing events
+    - Fault Handling & Recovery
+        - Watchdog timers
+        - Safe mode handling
+        - Logging & telemetry for debugging
+    - Configuration & Calibration
+        - Loading configs from flash
+        - Adjustable flight parameters
+    - Diagnostics & Self-Checks
+        - Power-on self-test (POST)
+        - Sensor validation
+    - Communications
+        - Protocol design (message format, packet handling, retries)
+        - Error correction (checksums, CRC)
+- ground-station
+    - Communications
+    - Backup comms
+    - Passing to remote
+    - Passing to on-board
+    - Logging
+    - Platform mechanical
+    - Network handling
+    - Error handling
+- remote
+    - Dashboard
+    - Sending/recieving
+    - Network handling
+    - Error handling
