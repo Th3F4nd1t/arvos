@@ -1,3 +1,27 @@
+## Files
+
+- on-board/
+    - main.rs -> basically just the loop and some metacode; creates a rocket.rs instance and runs an init() and a loop() or similar
+    - rocket.rs -> where subsytems are created, where events are made, the event manager is setup, etc
+    - subsystems/
+        - base.rs -> just a template and some meta stuff that will help with other subsystems
+        - example_subsytem.rs -> the actual subsystems
+        - mod.rs -> mod basically just has a `pub mod example_subsystem;` for each subsystem. basically makes that stuff accessible from other files.
+    - events/
+        - base.rs -> event base, event manager, and access stuff
+        - example_event.rs -> an event
+        - mod.rs -> same as other mod.rs but with events
+    - utils/
+        - constants.rs -> constants
+        - util.rs -> anything that's used more than once across files, so prolly basic pin access, etc
+        - mod.rs -> another one of these
+- ground-station/
+    - main.py -> idk yet
+- remote/
+    - main.py -> idk yet
+    - gui.py -> gui stuff
+
+
 ## Todo
 - on-board
     - Events
