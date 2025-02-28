@@ -19,8 +19,9 @@ basically just the loop and some metacode; creates a rocket.rs instance and runs
 where subsytems are created, where events are made, the event manager is setup, etc
 - Power-on self-test (POST)
     - Sensor validation
+
+Pseudo: 
 <br>
-Pseudo:
 ```
 When power on:
 Create Event Manager
