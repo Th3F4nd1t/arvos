@@ -1,11 +1,11 @@
-# Control Structure
-You have subsystems, essentially the same as a subsystem in frc, it's a hardware abstraction layer. Providing commands on it's given hardware that other things can interface with.
-You have events. An event is specified by a start condition, an end condition, a run command, and a list of requirements. A requirement is simply "this subsystem with this permission level." Permission levels could be:
+# Software
+
+## Control Structure
+You have subsystems which are essnetially hardware abstraction layers. Providing commands on its given hardware that other things can interface with.
+<br>
+You have events. An event is specified by a start condition, an end condition, a run command, and a list of requirements. A requirement is simply "this subsystem with this permission level."
 <br><br>
 In the main loop it checks if an event should be started. If so it spins up a thread of that event. It allows that thread to run until the end condition is met, in which case it terminates the thread, or runs an "end" function. If the thread takes more than a specified amount of time to end, it can either forcibly crash the thread, or so smth else depending on what is specified for that specific event.
-
-# Files
-A run down on the goal of each file and what is going to be in the file.
 
 ## on-board/
 
@@ -19,6 +19,22 @@ basically just the loop and some metacode; creates a rocket.rs instance and runs
 where subsytems are created, where events are made, the event manager is setup, etc
 - Power-on self-test (POST)
     - Sensor validation
+Pseudo:
+```
+When power on:
+Create Event Manager
+Create Subsystems
+Create Events and pass subsystems
+Add Events to Event Manager
+Move to disabled
+
+On init:
+Run Subsystem Inits
+Check for timings on inits
+
+On enable:
+Start event watchers (main code-ish)
+```
 
 
 ## on-board/events/
